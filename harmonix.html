@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonix LFP - Generador Armónico Interactivo | Los Fintz Productions</title>
+    <meta name="description"
+        content="Explora y genera progresiones armónicas musicales complejas basadas en reglas teóricas, modos y síntesis de audio en tiempo real. Integrado en Los Fintz Productions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/harmonix.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="harmonix-page">
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">
+                <img src="images/logo-placeholder.svg" alt="Los Fintz Logo" class="logo-img">
+                <span> <span class="highlight"></span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="mivozbrilla.html" class="nav-highlight">Mi Voz Brilla</a></li>
+                <li class="dropdown">
+                    <a href="harmonix.html" class="nav-highlight-red">Harmonix LFP</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="harmonix.html?tab=tab-dashboard" data-tab="tab-dashboard" class="nav-tab-btn">Portal / Inicio</a></li>
+                        <li><a href="harmonix.html?tab=tab-generator" data-tab="tab-generator" class="nav-tab-btn">Generador Interactivo</a></li>
+                        <li><a href="harmonix.html?tab=tab-theory" data-tab="tab-theory" class="nav-tab-btn">Biblioteca Teórica</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#about">Sobre Mí</a></li>
+                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="index.html#portfolio">Portafolio</a></li>
+                <li><a href="index.html#contact" class="btn btn-primary sm-btn">Pedir Cotización</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="harmonix-container">
+        <!-- TAB 1: DASHBOARD / PORTAL -->
+        <section id="tab-dashboard" class="page-tab active">
+            <div class="glass-panel hero-banner">
+                <div class="hero-badge">✨ Síntesis de Audio y Lógica Musical en Tiempo Real</div>
+                <h1 class="hero-title">Explora y Crea <span>Progresiones Armónicas</span> Complejas</h1>
+                <p class="hero-desc">
+                    Un motor conceptual que aplica reglas musicales avanzadas para generar secuencias armónicas valiosas auditiva y visualmente. Diseñado para músicos, compositores y estudiantes de teoría musical.
+                </p>
+                <button class="btn-cta" id="btnCtaDashboard">
+                    <span>🚀</span> Iniciar Generador Interactivo
+                </button>
+            </div>
+
+            <h2 style="margin-bottom: 1.5rem; font-family: 'Space Grotesk', sans-serif; font-size: 2rem;">Módulos de Generación Disponible</h2>
+            <div class="modules-grid">
+                <div class="glass-panel module-card" data-module="1">
+                    <div class="module-icon">🎵</div>
+                    <h3 class="module-card-title">1. Pop Acústico / Básicas</h3>
+                    <p class="module-card-desc">Progresiones diatónicas intuitivas basadas en fórmulas de alta familiaridad y consonancia (I-IV-V, I-vi-IV-V).</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="2">
+                    <div class="module-icon">🎼</div>
+                    <h3 class="module-card-title">2. Clásicas / Cadencias</h3>
+                    <p class="module-card-desc">Estructuración de tensión hacia resoluciones tonales fuertes trabajando retrospectivamente hacia la Tónica.</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="3">
+                    <div class="module-icon">🎷</div>
+                    <h3 class="module-card-title">3. Jazz / Sustituciones</h3>
+                    <p class="module-card-desc">Sustituciones de tritono, acordes extendidos (7ª, 9ª, 13ª) y secuencias ii-V-I con enriquecimiento tonal.</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="4">
+                    <div class="module-icon">🎸</div>
+                    <h3 class="module-card-title">4. Rock Progresivo (Prog)</h3>
+                    <p class="module-card-desc">Desarrollo dramático modular por secciones (A → B) con mediantes cromáticas y modulación textural.</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="5">
+                    <div class="module-icon">🎤</div>
+                    <h3 class="module-card-title">5. Canción Completa</h3>
+                    <p class="module-card-desc">Generación jerárquica con narrativa musical delimitada por roles (Estrofa, Estribillo, Puente).</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="6">
+                    <div class="module-icon">🎺</div>
+                    <h3 class="module-card-title">6. Blues / R&B</h3>
+                    <p class="module-card-desc">Estructura clásica de 12 compases con acordes dominantes 7ª, turnarounds y variaciones jazz-blues.</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="7">
+                    <div class="module-icon">🌴</div>
+                    <h3 class="module-card-title">7. Bossa Nova / Latin</h3>
+                    <p class="module-card-desc">Armonía brasileña suave con acordes maj7, m9 y movimiento cromático inspirado en la tradición carioca.</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="8">
+                    <div class="module-icon">💃</div>
+                    <h3 class="module-card-title">8. Flamenco / Español</h3>
+                    <p class="module-card-desc">Cadencia Andaluza basada en el modo Frigio con movimiento bII → I y tensión dramática española.</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="9">
+                    <div class="module-icon">🌌</div>
+                    <h3 class="module-card-title">9. Ambient / Cinemático</h3>
+                    <p class="module-card-desc">Texturas atmosféricas con acordes suspendidos, movimiento modal y resoluciones etéreas para soundtracks.</p>
+                </div>
+
+                <div class="glass-panel module-card" data-module="10">
+                    <div class="module-icon">✝️</div>
+                    <h3 class="module-card-title">10. Neo-Soul / Gospel</h3>
+                    <p class="module-card-desc">Armonía extendida rica con 9as, 13as, dominantes secundarios y voice-leading cromático envolvente.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 2: INTERACTIVE GENERATOR -->
+        <section id="tab-generator" class="page-tab">
+            <div class="generator-layout">
+                <!-- Controls Sidebar -->
+                <aside class="glass-panel">
+                    <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 1.25rem; margin-bottom: 1.2rem;">Parámetros del Motor</h2>
+                    
+                    <div class="control-group">
+                        <label class="control-label" for="keySelect">Tonalidad Base</label>
+                        <select id="keySelect" class="control-select">
+                            <option value="C" selected>C (Do)</option>
+                            <option value="C#">C# / Db</option>
+                            <option value="D">D (Re)</option>
+                            <option value="Eb">Eb (Mi b)</option>
+                            <option value="E">E (Mi)</option>
+                            <option value="F">F (Fa)</option>
+                            <option value="F#">F# / Gb</option>
+                            <option value="G">G (Sol)</option>
+                            <option value="Ab">Ab (La b)</option>
+                            <option value="A">A (La)</option>
+                            <option value="Bb">Bb (Si b)</option>
+                            <option value="B">B (Si)</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="modeSelect">Modo Armónico</label>
+                        <select id="modeSelect" class="control-select">
+                            <option value="major" selected>Mayor (Jónico)</option>
+                            <option value="minor">Menor Natural (Eólico)</option>
+                            <option value="harmonic_minor">Menor Armónica</option>
+                            <option value="dorian">Dórico</option>
+                            <option value="mixolydian">Mixolidio</option>
+                            <option value="lydian">Lidio</option>
+                            <option value="phrygian">Frigio</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="moduleSelect">Manual de Reglas (Módulo)</label>
+                        <select id="moduleSelect" class="control-select">
+                            <option value="1" selected>Módulo 1: Pop Acústico / Básicas</option>
+                            <option value="2">Módulo 2: Clásicas / Cadenciales</option>
+                            <option value="3">Módulo 3: Jazz & Sustituciones</option>
+                            <option value="4">Módulo 4: Prog Rock (Arcos Dramáticos)</option>
+                            <option value="5">Módulo 5: Estructura Canción (A-B-A-C-A)</option>
+                            <option value="6">Módulo 6: Blues / R&B</option>
+                            <option value="7">Módulo 7: Bossa Nova / Latin Jazz</option>
+                            <option value="8">Módulo 8: Flamenco / Español</option>
+                            <option value="9">Módulo 9: Ambient / Cinemático</option>
+                            <option value="10">Módulo 10: Neo-Soul / Gospel</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="presetSelect">Timbre Sintetizador</label>
+                        <select id="presetSelect" class="control-select">
+                            <option value="piano" selected>Piano Acústico</option>
+                            <option value="epiano">Electric Piano (Rhodes)</option>
+                            <option value="pad">Warm Synth Pad</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="styleSelect">Estilo de Reproducción</label>
+                        <select id="styleSelect" class="control-select">
+                            <option value="block" selected>Bloques de Acordes</option>
+                            <option value="arpeggio">Arpegio Rítmico</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label" for="bpmInput">
+                            Tempo 
+                            <span id="bpmVal" style="color: var(--primary);">100 BPM</span>
+                        </label>
+                        <input type="range" id="bpmInput" class="control-input" min="50" max="180" value="100" style="padding: 0;">
+                    </div>
+
+                    <div class="control-group" style="display: flex; align-items: center; justify-content: space-between; margin-top: 1rem;">
+                        <span class="vol-icon">🔊 Volumen</span>
+                        <input type="range" id="masterVol" class="vol-slider" min="0" max="1" step="0.05" value="0.8" style="width: 150px; cursor: pointer; accent-color: var(--primary);">
+                    </div>
+
+                    <button id="btnGenerate" class="btn-generate" style="margin-top: 1.5rem;">
+                        <span>✨</span> Generar Progresión
+                    </button>
+                </aside>
+
+                <!-- Main Progression Visualizer & Audio Output -->
+                <div class="generator-main">
+                    <!-- Playback Top Bar -->
+                    <div class="playback-bar">
+                        <div class="playback-buttons">
+                            <button id="btnPlayMaster" class="btn-play-master" title="Reproducir Progresión Completa">▶</button>
+                            <button id="btnStopMaster" class="btn-stop-master" title="Detener">⏹</button>
+                        </div>
+                        <div class="playback-setting">
+                            <span>🔊 Salida Sintetizada en Tiempo Real (Web Audio API)</span>
+                        </div>
+                    </div>
+
+                    <!-- Chord Cards Section -->
+                    <div class="glass-panel progression-results">
+                        <div class="progression-header">
+                            <div>
+                                <h2 class="progression-title">Secuencia Armónica Generada</h2>
+                                <span id="moduleBadge" class="progression-info-badge">Módulo 1: Pop Acústico</span>
+                            </div>
+                            <div class="speed-toggle" id="speedToggleWrap" title="Activar/Desactivar velocidad al 50%">
+                                <span class="speed-toggle-label">🐢 Velocidad 50%</span>
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="speedToggle">
+                                    <span class="toggle-slider"></span>
+                                </label>
+                                <span class="speed-toggle-status" id="speedToggleStatus">OFF</span>
+                            </div>
+                        </div>
+
+                        <div id="chordsContainer" class="chords-flex">
+                            <!-- Dynamically populated chord cards -->
+                        </div>
+                    </div>
+
+                    <!-- Interactive Keyboard Roll Visualizer -->
+                    <div class="glass-panel visualizer-section">
+                        <div class="visualizer-title">
+                            <span>🎹 Visualizador de Teclas Activas</span>
+                        </div>
+                        <div class="keyboard-container">
+                            <div id="pianoKeyboard" class="piano-keyboard">
+                                <!-- Dynamically generated keys -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB 3: THEORY LIBRARY -->
+        <section id="tab-theory" class="page-tab">
+            <h2 style="font-family: 'Space Grotesk', sans-serif; font-size: 2.5rem; margin-bottom: 0.5rem;">Biblioteca Teórica y Recursos</h2>
+            <p style="color: var(--text-muted); margin-bottom: 2rem;">Aprende las reglas y conceptos armónicos aplicados por el motor de generación en tiempo real.</p>
+
+            <div class="theory-grid">
+                <div class="theory-card">
+                    <div class="theory-card-header">
+                        <div class="theory-card-icon">🏛️</div>
+                        <div class="theory-card-title">Funciones Armónicas</div>
+                    </div>
+                    <div class="theory-card-body">
+                        <p>Cada acorde cumple un rol gravitacional dentro de una tonalidad:</p>
+                        <span class="theory-tag">Tónica (I, vi)</span> Centro de reposo y estabilidad.
+                        <br>
+                        <span class="theory-tag">Subdominante (IV, ii)</span> Movimiento con tensión moderada.
+                        <br>
+                        <span class="theory-tag">Dominante (V, vii°)</span> Máxima tensión con necesidad de resolver a Tónica.
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-card-header">
+                        <div class="theory-card-icon">🎷</div>
+                        <div class="theory-card-title">Sustitución de Tritono</div>
+                    </div>
+                    <div class="theory-card-body">
+                        <p>Técnica fundamental del Jazz donde un acorde dominante (V7) se reemplaza por otro acorde dominante ubicado a distancia de 3 tonos enteros (tritono).</p>
+                        <p><strong>Ejemplo:</strong> Reemplazar G7 por Db7 al resolver hacia Cmaj7.</p>
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-card-header">
+                        <div class="theory-card-icon">🎼</div>
+                        <div class="theory-card-title">Cadencias Fórmulas</div>
+                    </div>
+                    <div class="theory-card-body">
+                        <p>Puntos de puntuación armónica que concluyen frases musicales:</p>
+                        <span class="theory-tag">Auténtica (V → I)</span> Resolución conclusiva directa.
+                        <br>
+                        <span class="theory-tag">Plagal (IV → I)</span> Resolución suave ("Amén").
+                        <br>
+                        <span class="theory-tag">Engañosa (V → vi)</span> Sorpresa tonal al evitar la Tónica principal.
+                    </div>
+                </div>
+
+                <div class="theory-card">
+                    <div class="theory-card-header">
+                        <div class="theory-card-icon">🎸</div>
+                        <div class="theory-card-title">Mediantes Cromáticas</div>
+                    </div>
+                    <div class="theory-card-body">
+                        <p>Utilizadas ampliamente en el Rock Progresivo y música de cine. Consiste en conectar acordes de la misma cualidad (ej. Mayores) cuya raíz dista una tercera mayor o menor.</p>
+                        <p><strong>Ejemplo:</strong> C mayor a Eb mayor.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 Los Fintz Productions &amp; Harmonix LFP. Todos los derechos reservados.</p>
+                <p class="footer-contact">cesar@losfintz.com &nbsp;|&nbsp; 56 1304 0962</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/losfintz/">Instagram</a>
+                <a href="https://www.facebook.com/people/Los-Fintz-Productions/61581033681248/">Facebook</a>
+                <a href="https://www.youtube.com/channel/UC0Cq9apT4xYk3iN8wxsxjIg">YouTube</a>
+                <a href="mailto:cesar@losfintz.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modular Scripts -->
+    <script src="js/theoryEngine.js"></script>
+    <script src="js/audioEngine.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
